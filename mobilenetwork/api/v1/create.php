@@ -53,7 +53,7 @@ if(empty($data->mobile_number)|| empty($data->mobile_network)||empty($data->mobi
 
 $mob = new Mobile;
 
-$rec = $mob->register_network($data->mobile_number, $data->mobile_network, $data->mobile_message, $data->ref_code);
+$rec = $mob->register_network($data->mobile_number, $data->mobile_network, $data->mobile_message, ($data->ref_code.rand()));
 
 if($rec){
     http_response_code(200);
