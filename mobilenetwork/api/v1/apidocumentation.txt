@@ -1,0 +1,29 @@
+This is a brief overview to help you use our API to register your mobile nubmer, mobile network, message and unique ref code:
+
+API Name: Novarji Mobile Network Registration API
+
+Description: This API allows users to register their mobile nubmer, mobile network, message, and a unique ref code. Enabling access to our services and features. 
+
+Endpoint:
+
+    Method: - POST
+
+    /localhost/novarji_introserve/mobilenetwork/api/v1/create.php : This is the endpoint for registering.
+
+
+Request Body:
+
+    - mobile_number (string)
+    - mobile_network (string)
+    - mobile_message (string)
+    - ref_code[string, unique]
+
+Response:
+
+    Format: JSON;
+    phone_number (string)
+    mobile_network(string)
+    status(enum['success', failure])
+    message(string)
+Version: 1.0
+
